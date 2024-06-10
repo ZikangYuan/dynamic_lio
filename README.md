@@ -51,3 +51,55 @@ cd ..
 catkin_make
 ```
 
+## Run on Public Datasets
+
+Noted:
+
+A. The warning message "Failed to find match for field 'time'." doesn't matter. It can be ignored.
+
+B. **Please create a folder named "output" in "sr_lio" folder before running.** When **Dynamic-LIO** is running, the estimated pose of odometry is recorded in real time in the **pose.txt** located in the **output folder**, and the estimated pose with loop closure is recorded in the **final_pose.txt** located in the **output folder** after finishing a sequence.
+
+###  1. Run on [*R3Live_Dataset*](https://github.com/ziv-lin/r3live_dataset)
+
+Before running, please type the following command to examine the image message type of ROS bag file:
+
+```bash
+rosbag info SEQUENCE_NAME.bag
+```
+
+If the image message type is **sensor_msgs/Image**, please type:
+
+```bash
+cd SR-LIVO
+source devel/setup.bash
+roslaunch sr_livo livo_r3live.launch
+```
+
+If the image message type is **sensor_msgs/CompressedImage**, please type:
+
+```bash
+cd SR-LIVO
+source devel/setup.bash
+roslaunch sr_livo livo_r3live_compressed.launch
+```
+Then open the terminal in the path of the bag file, and type:
+
+```bash
+rosbag play SEQUENCE_NAME.bag --clock -d 1.0
+```
+
+###  2. Run on [*NTU_VIRAL*](https://ntu-aris.github.io/ntu_viral_dataset/)
+
+Please go to the workspace of **SR-LIVO** and type:
+
+```bash
+cd SR-LIVO
+source devel/setup.bash
+roslaunch sr_livo livo_ntu.launch
+```
+
+Then open the terminal in the path of the bag file, and type:
+
+```bash
+rosbag play SEQUENCE_NAME.bag --clock -d 1.0
+```
