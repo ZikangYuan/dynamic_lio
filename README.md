@@ -83,14 +83,22 @@ Then open the terminal in the path of the bag file, and type:
 rosbag play SEQUENCE_NAME.bag --clock -d 1.0
 ```
 
-###  2. Run on [*NTU_VIRAL*](https://ntu-aris.github.io/ntu_viral_dataset/)
+###  2. Run on [*Urban-Nav*](https://github.com/weisongwen/UrbanNavDataset)
 
-Please go to the workspace of **SR-LIVO** and type:
+Please go to the workspace of **Dynamic-LIO** and open two terminals, type the following command in terminal 1:
 
 ```bash
-cd SR-LIVO
+cd Dynamic-LIO
 source devel/setup.bash
-roslaunch sr_livo livo_ntu.launch
+roslaunch sr_lio lio_urban_nav.launch
+```
+
+and type the following command in terminal 2:
+
+```bash
+cd Dynamic-LIO
+source devel/setup.bash
+roslaunch aloam_velodyne loop_closure.launch
 ```
 
 Then open the terminal in the path of the bag file, and type:
