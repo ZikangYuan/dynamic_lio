@@ -11,3 +11,21 @@ Authors: [*Zikang Yuan*](https://scholar.google.com/citations?hl=zh-CN&user=acxd
 [SR-LIO: LiDAR-Inertial Odometry with Sweep Reconstruction](https://arxiv.org/abs/2210.10424)
 
 Authors: [*Zikang Yuan*](https://scholar.google.com/citations?hl=zh-CN&user=acxdM9gAAAAJ), [*Fengtian Lang*](https://scholar.google.com/citations?hl=zh-CN&user=zwgGSkEAAAAJ&view_op=list_works&gmla=ABEO0Yrl4-YPuowyntSYyCW760yxM5-IWkF8FGV4t9bs9qz1oWrqnlHmPdbt7LMcMDc04kl2puqRR4FaZvaCUONsX7MQhuAC6a--VS2pTsuwj-CyKgWp3iWDP2TS0I__Zui5da4), *Tianle Xu* and [*Xin Yang*](https://scholar.google.com/citations?user=lsz8OOYAAAAJ&hl=zh-CN)
+
+## Installation
+
+### 1. Requirements
+
+> GCC >= 7.5.0
+>
+> Cmake >= 3.16.0
+> 
+> [Eigen3](http://eigen.tuxfamily.org/index.php?title=Main_Page) >= 3.3.4
+>
+> [OpenCV](https://github.com/opencv/opencv) >= 3.3
+>
+> [PCL](https://pointclouds.org/downloads/) == 1.8 for Ubuntu 18.04, and == 1.10 for Ubuntu 20.04
+>
+> [GTSAM](https://github.com/borglab/gtsam/tree/4.0.3) == 4.0.3 for Ubuntu 20.04
+>
+> [ROS](http://wiki.ros.org/ROS/Installation)
