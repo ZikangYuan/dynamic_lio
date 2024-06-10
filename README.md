@@ -29,3 +29,9 @@ Authors: [*Zikang Yuan*](https://scholar.google.com/citations?hl=zh-CN&user=acxd
 > [GTSAM](https://github.com/borglab/gtsam/tree/4.0.3) == 4.0.3 for Ubuntu 20.04
 >
 > [ROS](http://wiki.ros.org/ROS/Installation)
+
+##### Have Tested On:
+
+| OS    | GCC  | Cmake | Eigen3 | OpenCV | PCL | GTSAM |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| Ubuntu 20.04 | 9.4.0  | 3.16.3 | 3.3.7 | 4.2.0 | 1.10.0 | 4.0.3 |
