@@ -59,29 +59,24 @@ A. The warning message "Failed to find match for field 'time'." doesn't matter. 
 
 B. **Please create a folder named "output" in "sr_lio" folder before running.** When **Dynamic-LIO** is running, the estimated pose of odometry is recorded in real time in the **pose.txt** located in the **output folder**, and the estimated pose with loop closure is recorded in the **final_pose.txt** located in the **output folder** after finishing a sequence.
 
-###  1. Run on [*R3Live_Dataset*](https://github.com/ziv-lin/r3live_dataset)
+###  1. Run on [*ULHK-CA*](https://github.com/weisongwen/UrbanLoco)
 
-Before running, please type the following command to examine the image message type of ROS bag file:
-
-```bash
-rosbag info SEQUENCE_NAME.bag
-```
-
-If the image message type is **sensor_msgs/Image**, please type:
+Please go to the workspace of **Dynamic-LIO** and open two terminals, type the following command in terminal 1:
 
 ```bash
-cd SR-LIVO
+cd Dynamic-LIO
 source devel/setup.bash
-roslaunch sr_livo livo_r3live.launch
+roslaunch sr_lio lio_ulhk_CA.launch
 ```
 
-If the image message type is **sensor_msgs/CompressedImage**, please type:
+and type the following command in terminal 2:
 
 ```bash
-cd SR-LIVO
+cd Dynamic-LIO
 source devel/setup.bash
-roslaunch sr_livo livo_r3live_compressed.launch
+roslaunch aloam_velodyne loop_closure.launch
 ```
+
 Then open the terminal in the path of the bag file, and type:
 
 ```bash
