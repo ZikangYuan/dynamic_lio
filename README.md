@@ -4,7 +4,7 @@
 
 ## Related Work
 
-[A Fast Dynamic Point Detection Method for LiDAR-Inertial Odometry in Driving Scenarios](https://arxiv.org/abs/2407.03590)
+[LiDAR-Inertial Odometry in Dynamic Driving Scenarios using Label Consistency Detection](https://arxiv.org/abs/2407.03590)
 
 Authors: [*Zikang Yuan*](https://scholar.google.com/citations?hl=zh-CN&user=acxdM9gAAAAJ), *Xiaoxiang Wang*, *Jingying Wu*, [*Junda Cheng*](https://scholar.google.com/citations?user=_G_Tu9EAAAAJ&hl=zh-CN) and [*Xin Yang*](https://scholar.google.com/citations?user=lsz8OOYAAAAJ&hl=zh-CN)
 
@@ -112,8 +112,8 @@ rosbag play SEQUENCE_NAME.bag --clock -d 1.0
 If you use our work in your research project, please consider citing:
 
 ```
-@article{yuan2024a,
-  title={A Fast Dynamic Point Detection Method for LiDAR-Inertial Odometry in Driving Scenarios},
+@article{yuan2024lidar,
+  title={LiDAR-Inertial Odometry in Dynamic Driving Scenarios using Label Consistency Detection},
   author={Yuan, Zikang and Wang, Xiaoxiang and Wu, jingying and Cheng, junda and Yang, Xin},
   journal={arXiv preprint arXiv:2407.03590},
   year={2024}
